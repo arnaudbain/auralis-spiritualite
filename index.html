@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auralis Spiritualité | Sanctuaire Numérique de Julie</title>
+    <title>Auralis Spiritualité | Guidance Intuitive par Julie Bain</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
@@ -13,155 +13,137 @@
         .text-vert-eau { color: #82a38e; }
         .bg-sable { background-color: #F4F1EA; }
         .border-sable { border-color: #E5E1D5; }
-        .animate-pulse-slow { animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
-        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }
     </style>
 </head>
 <body class="bg-white text-slate-800 leading-relaxed">
 
     <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-sable">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="text-2xl font-bold tracking-widest text-vert-eau italic uppercase">Auralis</span>
-            <div class="hidden md:flex space-x-8 text-xs uppercase tracking-widest font-bold">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-2xl font-bold tracking-widest text-vert-eau italic">AURALIS</span>
+            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-medium">
                 <a href="#accueil" class="hover:text-vert-eau transition">Accueil</a>
-                <a href="#blog" class="hover:text-vert-eau transition">Explorations</a>
+                <a href="#services" class="hover:text-vert-eau transition">Services</a>
+                <a href="#a-propos" class="hover:text-vert-eau transition">À Propos</a>
                 <a href="#contact" class="hover:text-vert-eau transition">Contact</a>
             </div>
-            <a href="#services" class="bg-vert-eau text-white px-6 py-2 rounded-full text-xs font-bold hover:opacity-90 transition shadow-sm uppercase tracking-widest">Réserver</a>
+            <a href="#services" class="bg-vert-eau text-white px-5 py-2 rounded-full text-sm font-semibold hover:opacity-90 transition shadow-sm">Réserver</a>
         </div>
     </nav>
 
-    <header id="accueil" class="relative pt-32 pb-20 bg-sable px-6 border-b border-sable">
+    <header id="accueil" class="relative pt-32 pb-20 md:pt-48 md:pb-32 bg-sable px-6">
         <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-4xl md:text-6xl mb-8 leading-tight text-slate-900 font-bold">Nourrir son corps, élever son esprit.</h1>
-            
-            <div class="mt-12 bg-white p-8 rounded-[40px] shadow-sm border border-sable max-w-xl mx-auto transition-all hover:shadow-md">
-                <span class="text-vert-eau text-[10px] font-bold uppercase tracking-[0.2em] mb-4 block">Message de l'instant</span>
-                <div class="h-12 flex items-center justify-center">
-                    <p id="pensee-display" class="text-lg text-slate-600 font-medium italic transition-opacity duration-300">"Cliquez pour recevoir votre guidance..."</p>
-                </div>
-                <button onclick="tirerPensee()" class="mt-6 bg-vert-eau text-white px-8 py-3 rounded-full hover:scale-105 transition-all shadow-lg font-bold uppercase text-[10px] tracking-widest">Recevoir ma pensée</button>
-            </div>
+            <h1 class="text-4xl md:text-6xl mb-8 leading-tight text-slate-900 font-bold">Guidance intuitive et bienveillante pour retrouver votre clarté</h1>
+            <p class="text-xl md:text-2xl text-slate-600 mb-10 italic">Une réponse précise à votre question du moment pour avancer sereinement.</p>
+            <a href="#services" class="inline-block bg-vert-eau text-white px-10 py-4 rounded-full text-lg font-semibold shadow-lg hover:translate-y-[-2px] transition-all text-center">Découvrir mon service phare</a>
+            <a href="#services" class="inline-block bg-vert-eau text-white px-10 py-4 rounded-full text-lg font-semibold shadow-lg hover:translate-y-[-2px] transition-all">Découvrir mon service phare</a>
         </div>
     </header>
 
-    <section id="blog" class="py-24 px-6 bg-white">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl md:text-5xl text-center mb-20 italic text-slate-900 font-serif">Ressources & Éveil</h2>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-
-                <article class="group bg-sable/30 rounded-[32px] p-8 border border-sable hover:shadow-xl transition-all flex flex-col">
-                    <span class="bg-amber-50 text-amber-600 text-[10px] font-bold px-4 py-1.5 rounded-full uppercase w-fit mb-6">Astrologie</span>
-                    <h3 class="text-xl mb-4 font-serif italic font-bold italic leading-tight">Calculateur d'Ascendant</h3>
-                    <div class="space-y-4 bg-white p-5 rounded-2xl mt-auto">
-                        <input type="time" id="ascendant-time" class="w-full border border-sable rounded-lg p-3 text-sm outline-none focus:border-vert-eau">
-                        <button onclick="calculerAscendant()" class="w-full bg-slate-800 text-white py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest hover:bg-vert-eau transition-all">Révéler mon visage social</button>
-                        <div id="res-asc" class="hidden text-center p-2"><p id="signe-nom" class="font-bold text-vert-eau"></p><p id="signe-desc" class="text-[10px] italic"></p></div>
+    <section id="services" class="py-20 px-6">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl md:text-4xl text-center mb-16 italic text-slate-900">L'Éclairage Ciblé</h2>
+            <div class="bg-white border border-sable rounded-2xl p-8 md:p-12 shadow-sm hover:shadow-xl transition-shadow border-t-8 border-t-vert-eau">
+                <div class="flex justify-between items-start mb-6">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2 text-slate-800">Séance Individuelle</h3>
+                        <p class="text-slate-500 uppercase tracking-widest text-xs font-semibold">Accompagnement spirituel</p>
                     </div>
-                </article>
+                    <span class="text-3xl font-light text-vert-eau">35 €</span>
+                </div>
+                <p class="text-lg mb-8 text-slate-600 italic leading-relaxed">Une séance de 30 minutes focalisée sur une problématique précise pour débloquer votre situation avec douceur.</p>
 
-                <article class="group bg-sable/30 rounded-[32px] p-8 border border-sable hover:shadow-xl transition-all flex flex-col">
-                    <span class="bg-rose-50 text-rose-500 text-[10px] font-bold px-4 py-1.5 rounded-full uppercase w-fit mb-6">Psychologie Spirituelle</span>
-                    <h3 class="text-xl mb-4 font-serif italic font-bold italic leading-tight">Êtes-vous une Vieille Âme ?</h3>
-                    <div class="space-y-3 bg-white p-5 rounded-2xl mt-auto">
-                        <label class="flex items-center space-x-3 text-[11px] cursor-pointer"><input type="checkbox" class="accent-vert-eau"> <span>Besoin vital de solitude</span></label>
-                        <label class="flex items-center space-x-3 text-[11px] cursor-pointer"><input type="checkbox" class="accent-vert-eau"> <span>Intuition très précoce</span></label>
-                        <label class="flex items-center space-x-3 text-[11px] cursor-pointer"><input type="checkbox" class="accent-vert-eau"> <span>Détachement matériel</span></label>
-                    </div>
-                </article>
-
-                <article class="group bg-sable/30 rounded-[32px] p-8 border border-sable hover:shadow-xl transition-all flex flex-col">
-                    <span class="bg-blue-50 text-blue-500 text-[10px] font-bold px-4 py-1.5 rounded-full uppercase w-fit mb-6">Intuition</span>
-                    <h3 class="text-xl mb-4 font-serif italic font-bold italic leading-tight">Oracle Chromatique</h3>
-                    <div class="grid grid-cols-3 gap-2 mt-auto">
-                        <button onclick="alert('Bleu : Exprimez votre vérité.')" class="w-8 h-8 rounded-full bg-blue-400 mx-auto hover:scale-110 transition"></button>
-                        <button onclick="alert('Vert : Votre cœur a besoin de douceur.')" class="w-8 h-8 rounded-full bg-emerald-400 mx-auto hover:scale-110 transition"></button>
-                        <button onclick="alert('Violet : Connectez-vous à votre intuition.')" class="w-8 h-8 rounded-full bg-purple-400 mx-auto hover:scale-110 transition"></button>
-                    </div>
-                </article>
-
-                <article class="group bg-white rounded-[32px] p-8 border border-sable hover:shadow-xl transition-all flex flex-col">
-                    <span class="bg-slate-50 text-slate-500 text-[10px] font-bold px-4 py-1.5 rounded-full uppercase w-fit mb-6">Nature</span>
-                    <h3 class="text-xl mb-4 font-serif italic font-bold italic leading-tight">Signatures Sacrées</h3>
-                    <div class="aspect-video bg-slate-100 rounded-xl overflow-hidden mt-auto">
-                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/votre-id-oxyzen"></iframe>
-                    </div>
-                </article>
-
-                <article class="group bg-white rounded-[32px] p-8 border border-sable hover:shadow-xl transition-all flex flex-col">
-                    <span class="bg-indigo-50 text-indigo-500 text-[10px] font-bold px-4 py-1.5 rounded-full uppercase w-fit mb-6">Minéraux</span>
-                    <h3 class="text-xl mb-4 font-serif italic font-bold italic leading-tight">L'Énergie des Pierres</h3>
-                    <div class="flex justify-around mt-auto p-4 bg-sable/20 rounded-xl">
-                        <span title="Quartz Rose" class="cursor-help hover:drop-shadow-[0_0_8px_rgba(244,197,208,1)] transition">💎</span>
-                        <span title="Améthyste" class="cursor-help hover:drop-shadow-[0_0_8px_rgba(155,89,182,1)] transition">🔮</span>
-                        <span title="Labradorite" class="cursor-help hover:drop-shadow-[0_0_8px_rgba(52,73,94,1)] transition">🛡️</span>
-                    </div>
-                </article>
-
-                <article class="group bg-white rounded-[32px] p-8 border border-sable hover:shadow-xl transition-all flex flex-col">
-                    <span class="bg-purple-50 text-purple-500 text-[10px] font-bold px-4 py-1.5 rounded-full uppercase w-fit mb-6">Vibration</span>
-                    <h3 class="text-xl mb-4 font-serif italic font-bold italic leading-tight">Top 10 Vibratoire</h3>
-                    <ul class="text-[10px] text-slate-500 italic space-y-1 mt-auto">
-                        <li>• Fruits de Lumière</li>
-                        <li>• Graines Germées</li>
-                        <li>• Eau Dynamisée</li>
-                    </ul>
-                </article>
-
-                <article class="group bg-white rounded-[32px] p-8 border border-sable hover:shadow-xl transition-all flex flex-col">
-                    <span class="bg-teal-50 text-teal-500 text-[10px] font-bold px-4 py-1.5 rounded-full uppercase w-fit mb-6">Énergie</span>
-                    <h3 class="text-xl mb-4 font-serif italic font-bold italic leading-tight">Le Corps Éthérique</h3>
-                    <div class="relative h-24 w-full flex items-center justify-center mt-auto">
-                        <div class="w-12 h-20 border-2 border-vert-eau rounded-full animate-pulse-slow"></div>
-                        <div class="absolute inset-0 flex items-center justify-center text-[10px] text-vert-eau font-bold italic uppercase">Équilibre</div>
-                    </div>
-                </article>
-
-                <article class="group bg-white rounded-[32px] p-8 border border-sable hover:shadow-xl transition-all flex flex-col">
-                    <span class="bg-indigo-50 text-indigo-500 text-[10px] font-bold px-4 py-1.5 rounded-full uppercase w-fit mb-6">Rituel</span>
-                    <h3 class="text-xl mb-4 font-serif italic font-bold italic leading-tight">Poser son Intention</h3>
-                    <div class="space-y-3 mt-auto">
-                        <textarea id="intent" placeholder="Votre intention..." class="w-full text-[10px] p-3 border rounded-xl outline-none focus:border-indigo-300 italic"></textarea>
-                        <button onclick="alert('Intention scellée ✨')" class="w-full bg-indigo-50 text-indigo-500 py-2 rounded-lg text-[9px] font-bold uppercase tracking-widest">Valider</button>
-                    </div>
-                </article>
-
-                <article class="group bg-slate-900 text-white rounded-[32px] p-8 border border-slate-800 hover:shadow-xl transition-all flex flex-col">
-                    <span class="bg-white/10 text-white text-[10px] font-bold px-4 py-1.5 rounded-full uppercase w-fit mb-6">Cycles</span>
-                    <h3 class="text-xl mb-4 font-serif italic font-bold text-white italic leading-tight">Nouvelle Lune</h3>
-                    <p class="text-slate-400 text-[10px] italic leading-relaxed mb-6">Comment poser ses vœux lors du renouveau lunaire.</p>
-                    <button class="mt-auto border border-white/20 py-3 rounded-xl text-[9px] font-bold uppercase tracking-widest hover:bg-white hover:text-slate-900 transition">Lire le guide</button>
-                </article>
-
+                <div class="flex flex-col gap-4">
+                    <a href="https://calendly.com/julia-ferrant-17" target="_blank" class="block text-center bg-slate-800 text-white py-4 rounded-xl font-bold hover:bg-slate-700 transition">
+                        1. Réserver mon créneau (Week-end)
+                    </a>
+                    <a href="https://www.paypal.com/ncp/payment/9VEZSMPJY62KG" target="_blank" class="block text-center border-2 border-vert-eau text-vert-eau py-4 rounded-xl font-bold hover:bg-vert-eau hover:text-white transition">
+                        2. Régler la séance (PayPal Sécurisé)
+                    </a>
+                </div>
+                <p class="text-center text-xs text-slate-400 mt-6 italic font-medium">La séance est confirmée dès réception du règlement.</p>
             </div>
         </div>
     </section>
 
-    <footer class="bg-slate-950 text-slate-500 py-16 px-6 text-[11px] italic">
-        <div class="max-w-7xl mx-auto text-center space-y-6">
-            <p class="text-vert-eau font-bold uppercase tracking-widest">Auralis Spiritualité | Julie Bain</p>
-            <p>SIRET : 80874427000030 | 16 avenue d’Aquitaine, 17150 Mirambeau</p>
-            <p>Hébergé par Vercel Inc. | Mentions Légales & CGV</p>
+    <section id="a-propos" class="py-20 bg-sable px-6">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl mb-10 italic text-slate-900">Bonjour, je suis Julie</h2>
+            <div class="space-y-6 text-lg text-slate-700 italic leading-relaxed">
+            <h2 class="text-3xl md:text-4xl mb-10 italic text-slate-900 font-serif">Bonjour, je suis Julie</h2>
+            <div class="space-y-6 text-lg text-slate-700 italic leading-relaxed text-left max-w-2xl mx-auto">
+                <p>Mon chemin a toujours été guidé par une passion profonde pour le développement personnel. Après avoir partagé mes réflexions sur les réseaux sociaux, j’ai choisi de mettre ma sensibilité de médium au service de votre sérénité.</p>
+                <p>Avec <strong>Auralis Spiritualité</strong>, je vous propose un espace sans jugement pour vous éclairer avec tact, authenticité et bienveillance.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white px-6">
+        <div class="max-w-2xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl mb-8 italic text-slate-900">Une question ?</h2>
+            <h2 class="text-3xl md:text-4xl mb-8 italic text-slate-900 font-serif">Une question ?</h2>
+            <p class="mb-10 text-slate-600 italic">« Un doute ou besoin d'un renseignement ? Écrivez-moi ici. »</p>
+
+            <form action="https://formspree.io/f/mreegdyd" method="POST" class="text-left space-y-4 max-w-lg mx-auto">
+                <input type="text" name="name" placeholder="Nom et Prénom" required class="w-full p-4 rounded-lg border border-sable outline-none focus:border-vert-eau transition">
+                <input type="email" name="email" placeholder="Votre Email" required class="w-full p-4 rounded-lg border border-sable outline-none focus:border-vert-eau transition">
+                <textarea name="message" rows="4" placeholder="Votre message" required class="w-full p-4 rounded-lg border border-sable outline-none focus:border-vert-eau transition"></textarea>
+                <input type="text" name="_gotcha" style="display:none">
+                <button type="submit" class="w-full bg-vert-eau text-white py-4 rounded-lg font-bold shadow-md hover:brightness-105 transition">Envoyer le message</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="cgv" class="py-20 bg-sable px-6 border-t border-sable">
+        <div class="max-w-4xl mx-auto text-sm text-slate-600 space-y-6">
+            <h2 class="text-2xl text-slate-900 italic mb-8">Conditions Générales de Vente</h2>
+            <div class="grid md:grid-cols-2 gap-8 text-xs leading-relaxed">
+                <div class="space-y-4">
+                    <p><strong>1. Objet :</strong> Services de développement spirituel (médiumnité, clairvoyance).</p>
+                    <p><strong>2. Paiement :</strong> Règlement immédiat via PayPal pour valider le créneau.</p>
+                    <p><strong>3. Annulation :</strong> Remboursement intégral si > 24h avant. Aucun remboursement si < 24h ou non-présentation.</p>
+                    <p><strong>1. Objet :</strong> Prestations de services de développement spirituel (médiumnité, clairvoyance).</p>
+                    <p><strong>2. Paiement :</strong> Le règlement doit être effectué au moment de la réservation via PayPal.</p>
+                    <p><strong>3. Annulation :</strong> Remboursement intégral si l'annulation intervient plus de 24h avant. Aucun remboursement si moins de 24h ou non-présentation.</p>
+                </div>
+                <div class="space-y-4">
+                    <p><strong>4. Confidentialité :</strong> Julie s'engage à la discrétion absolue et au respect du libre-arbitre.</p>
+                    <p><strong>5. Responsabilité :</strong> Ces séances ne remplacent pas un avis médical ou juridique.</p>
+                    <p><strong>6. Acceptation :</strong> La réservation implique l'adhésion totale aux présentes CGV.</p>
+                    <p><strong>4. Confidentialité :</strong> Julie s'engage à la discrétion absolue. Le consultant reste maître de son libre-arbitre.</p>
+                    <p><strong>5. Responsabilité :</strong> Les séances ne remplacent pas un avis médical, juridique ou psychologique.</p>
+                    <p><strong>6. Acceptation :</strong> La réservation implique l'adhésion sans réserve aux présentes CGV.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 py-16 px-6 text-sm">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-1
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12 border-b border-slate-800 pb-12">
+            <div>
+                <h4 class="text-white text-lg font-bold mb-4 italic font-serif text-vert-eau">Auralis Spiritualité</h4>
+                <p>Éditeur : Julie Bain</p>
+                <p>Statut : Micro-entreprise</p>
+                <p class="mt-2 text-slate-300 font-medium">julia.ferrant.17@gmail.com</p>
+            </div>
+            <div>
+                <h4 class="text-white text-lg font-bold mb-4 italic font-serif">Informations Légales</h4>
+                <p>SIRET : 80874427000030</p>
+                <p>Siège social : 16 avenue d’Aquitaine,</p>
+                <p>17150 Mirambeau</p>
+            </div>
+            <div>
+                <h4 class="text-white text-lg font-bold mb-4 italic font-serif">Hébergement</h4>
+                <p>Vercel Inc.</p>
+                <p>340 S Lemon Ave #1192,</p>
+                <p>Walnut, CA 91789, USA</p>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto pt-8 flex flex-col md:flex-row justify-between gap-4 text-xs italic">
+            <p>&copy; 2026 Auralis Spiritualité. Propriété exclusive de Julie Bain.</p>
+            <p><a href="#cgv" class="underline hover:text-white">Consulter les CGV</a></p>
         </div>
     </footer>
 
-    <script>
-        function tirerPensee() {
-            const pensees = ["Faites confiance au timing.", "L'intuition est votre boussole.", "Respirez, la réponse est là.", "L'univers vous soutient.", "Écoutez le silence."];
-            const p = document.getElementById('pensee-display');
-            p.style.opacity = 0;
-            setTimeout(() => { p.innerText = `"${pensees[Math.floor(Math.random()*pensees.length)]}"`; p.style.opacity = 1; }, 300);
-        }
-
-        function calculerAscendant() {
-            const time = document.getElementById('ascendant-time').value;
-            if(!time) return;
-            const res = document.getElementById('res-asc');
-            document.getElementById('signe-nom').innerText = "Vibration Lion"; 
-            document.getElementById('signe-desc').innerText = "Une présence rayonnante et chaleureuse.";
-            res.classList.remove('hidden');
-        }
-    </script>
 </body>
 </html>
