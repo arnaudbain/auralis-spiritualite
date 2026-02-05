@@ -7,59 +7,108 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #F4F1EA; }
+        body { font-family: 'Inter', sans-serif; background-color: #F4F1EA; color: #334155; }
         h1, h2, h3 { font-family: 'Playfair Display', serif; }
         .bg-vert-eau { background-color: #A3C1AD; }
         .text-vert-eau { color: #82a38e; }
+        .btn-gold { background-color: #D4AF37; color: white; }
     </style>
 </head>
-<body>
-    <header class="py-20 text-center bg-white border-b border-stone-200">
-        <h1 class="text-5xl font-bold italic text-slate-900">Auralis</h1>
-        <p class="mt-4 text-slate-500 italic uppercase tracking-widest text-xs">Éclairage Spirituel & Bienveillance</p>
+<body class="selection:bg-vert-eau/30">
+
+    <header class="py-24 text-center bg-white border-b border-stone-100">
+        <h1 class="text-6xl font-bold italic text-slate-900 tracking-tight">Auralis</h1>
+        <div class="h-px w-32 bg-vert-eau mx-auto my-6"></div>
+        <p class="text-slate-500 italic uppercase tracking-[0.4em] text-[10px]">Éclairage Spirituel & Guidance</p>
     </header>
 
-    <section id="blog" class="py-24 px-6 max-w-5xl mx-auto">
-        <h2 class="text-4xl text-center mb-16 italic font-bold">Le Cercle d'Éveil</h2>
-        
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <a href="blog/blog-vieille-ame.html" class="p-8 bg-white rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all border border-stone-100">
-                <span class="text-vert-eau text-[10px] font-bold uppercase tracking-widest">Âme</span>
-                <h3 class="text-xl font-bold italic mt-2">Vieille Âme</h3>
-            </a>
-            <a href="blog/blog-alimentation.html" class="p-8 bg-white rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all border border-stone-100">
-                <span class="text-vert-eau text-[10px] font-bold uppercase tracking-widest">Corps</span>
-                <h3 class="text-xl font-bold italic mt-2">Alimentation Vibratoire</h3>
-            </a>
-            <a href="blog/blog-intention.html" class="p-8 bg-white rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all border border-stone-100">
-                <span class="text-vert-eau text-[10px] font-bold uppercase tracking-widest">Esprit</span>
-                <h3 class="text-xl font-bold italic mt-2">L'Intention</h3>
-            </a>
-            <a href="blog/blog-lithotherapie.html" class="p-8 bg-white rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all border border-stone-100">
-                <span class="text-vert-eau text-[10px] font-bold uppercase tracking-widest">Pierres</span>
-                <h3 class="text-xl font-bold italic mt-2">Lithothérapie</h3>
-            </a>
-            <a href="blog/blog-corps-etherique.html" class="p-8 bg-white rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all border border-stone-100">
-                <span class="text-vert-eau text-[10px] font-bold uppercase tracking-widest">Énergie</span>
-                <h3 class="text-xl font-bold italic mt-2">Corps Éthérique</h3>
-            </a>
-            <a href="blog/blog-heures-miroirs.html" class="p-8 bg-white rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all border border-stone-100">
-                <span class="text-vert-eau text-[10px] font-bold uppercase tracking-widest">Signes</span>
-                <h3 class="text-xl font-bold italic mt-2">Heures Miroirs</h3>
-            </a>
-            <a href="blog/blog-lune.html" class="p-8 bg-white rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all border border-stone-100">
-                <span class="text-vert-eau text-[10px] font-bold uppercase tracking-widest">Cycles</span>
-                <h3 class="text-xl font-bold italic mt-2">Rituels de Lune</h3>
-            </a>
-            <a href="blog/blog-synchronicites.html" class="p-8 bg-white rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all border border-stone-100">
-                <span class="text-vert-eau text-[10px] font-bold uppercase tracking-widest">Guidance</span>
-                <h3 class="text-xl font-bold italic mt-2">Synchronicités</h3>
-            </a>
-            <a href="blog/blog-protection.html" class="p-8 bg-white rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all border border-stone-100">
-                <span class="text-vert-eau text-[10px] font-bold uppercase tracking-widest">Protection</span>
-                <h3 class="text-xl font-bold italic mt-2">Empathie</h3>
-            </a>
+    <section id="services" class="py-20 px-6 max-w-4xl mx-auto">
+        <div class="bg-white rounded-[40px] p-12 shadow-sm border border-stone-100 text-center">
+            <h2 class="text-3xl mb-6 italic">Votre Séance de Guidance</h2>
+            <p class="mb-10 text-slate-500 italic">Un moment d'échange privilégié pour éclairer votre chemin de vie et recevoir les messages de vos guides.</p>
+            
+            <div class="flex flex-col md:flex-row justify-center gap-6 mb-12">
+                <div class="p-6 border border-stone-100 rounded-3xl bg-stone-50/50">
+                    <span class="block text-2xl font-bold text-slate-900">35€</span>
+                    <span class="text-[10px] uppercase tracking-widest text-slate-400">La séance</span>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="VOTRE_LIEN_PAYPAL" class="bg-slate-900 text-white px-10 py-4 rounded-full font-bold uppercase text-[11px] tracking-widest hover:scale-105 transition-all">Régler via PayPal</a>
+                <a href="VOTRE_LIEN_CALENDLY" class="border-2 border-slate-900 text-slate-900 px-10 py-4 rounded-full font-bold uppercase text-[11px] tracking-widest hover:bg-slate-900 hover:text-white transition-all">Prendre Rendez-vous</a>
+            </div>
         </div>
     </section>
+
+    <section id="ressources" class="py-24 px-6 bg-white shadow-inner rounded-t-[60px]">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold italic mb-4">Le Cercle d'Éveil</h2>
+                <p class="text-slate-400 italic text-sm font-light">Exploration des thèmes de la spiritualité et du bien-être</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <a href="blog/blog-vieille-ame.html" class="group p-8 bg-stone-50 rounded-[32px] hover:bg-white hover:shadow-xl hover:-translate-y-2 transition-all border border-transparent hover:border-stone-100">
+                    <span class="text-vert-eau text-[10px] font-bold uppercase tracking-widest mb-3 block">Âme</span>
+                    <h3 class="text-xl font-bold italic mb-2">Vieille Âme</h3>
+                    <p class="text-xs text-slate-400 italic">Comprendre votre décalage...</p>
+                </a>
+
+                <a href="blog/blog-alimentation.html" class="group p-8 bg-stone-50 rounded-[32px] hover:bg-white hover:shadow-xl hover:-translate-y-2 transition-all border border-transparent hover:border-stone-100">
+                    <span class="text-vert-eau text-[10px] font-bold uppercase tracking-widest mb-3 block">Corps</span>
+                    <h3 class="text-xl font-bold italic mb-2">Alimentation Vibratoire</h3>
+                    <p class="text-xs text-slate-400 italic">Théorie des signatures...</p>
+                </a>
+
+                <a href="blog/blog-intention.html" class="group p-8 bg-stone-50 rounded-[32px] hover:bg-white hover:shadow-xl hover:-translate-y-2 transition-all border border-transparent hover:border-stone-100">
+                    <span class="text-vert-eau text-[10px] font-bold uppercase tracking-widest mb-3 block">Esprit</span>
+                    <h3 class="text-xl font-bold italic mb-2">L'Intention</h3>
+                    <p class="text-xs text-slate-400 italic">La clé de la connexion...</p>
+                </a>
+
+                <a href="blog/blog-lithotherapie.html" class="group p-8 bg-stone-50 rounded-[32px] hover:bg-white hover:shadow-xl hover:-translate-y-2 transition-all border border-transparent hover:border-stone-100">
+                    <span class="text-vert-eau text-[10px] font-bold uppercase tracking-widest mb-3 block">Pierres</span>
+                    <h3 class="text-xl font-bold italic mb-2">Lithothérapie</h3>
+                    <p class="text-xs text-slate-400 italic">Énergie des minéraux...</p>
+                </a>
+
+                <a href="blog/blog-corps-etherique.html" class="group p-8 bg-stone-50 rounded-[32px] hover:bg-white hover:shadow-xl hover:-translate-y-2 transition-all border border-transparent hover:border-stone-100">
+                    <span class="text-vert-eau text-[10px] font-bold uppercase tracking-widest mb-3 block">Énergie</span>
+                    <h3 class="text-xl font-bold italic mb-2">Corps Éthérique</h3>
+                    <p class="text-xs text-slate-400 italic">Comprendre les blocages...</p>
+                </a>
+
+                <a href="blog/blog-heures-miroirs.html" class="group p-8 bg-stone-50 rounded-[32px] hover:bg-white hover:shadow-xl hover:-translate-y-2 transition-all border border-transparent hover:border-stone-100">
+                    <span class="text-vert-eau text-[10px] font-bold uppercase tracking-widest mb-3 block">Signes</span>
+                    <h3 class="text-xl font-bold italic mb-2">Heures Miroirs</h3>
+                    <p class="text-xs text-slate-400 italic">Messages de l'Univers...</p>
+                </a>
+
+                <a href="blog/blog-lune.html" class="group p-8 bg-stone-50 rounded-[32px] hover:bg-white hover:shadow-xl hover:-translate-y-2 transition-all border border-transparent hover:border-stone-100">
+                    <span class="text-vert-eau text-[10px] font-bold uppercase tracking-widest mb-3 block">Cycles</span>
+                    <h3 class="text-xl font-bold italic mb-2">Rituels de Lune</h3>
+                    <p class="text-xs text-slate-400 italic">Vivre au rythme céleste...</p>
+                </a>
+
+                <a href="blog/blog-synchronicites.html" class="group p-8 bg-stone-50 rounded-[32px] hover:bg-white hover:shadow-xl hover:-translate-y-2 transition-all border border-transparent hover:border-stone-100">
+                    <span class="text-vert-eau text-[10px] font-bold uppercase tracking-widest mb-3 block">Guidance</span>
+                    <h3 class="text-xl font-bold italic mb-2">Synchronicités</h3>
+                    <p class="text-xs text-slate-400 italic">Lire les signes du quotidien...</p>
+                </a>
+
+                <a href="blog/blog-protection.html" class="group p-8 bg-stone-50 rounded-[32px] hover:bg-white hover:shadow-xl hover:-translate-y-2 transition-all border border-transparent hover:border-stone-100">
+                    <span class="text-vert-eau text-[10px] font-bold uppercase tracking-widest mb-3 block">Protection</span>
+                    <h3 class="text-xl font-bold italic mb-2">Empathie</h3>
+                    <p class="text-xs text-slate-400 italic">Protéger son énergie...</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-white text-center">
+        <p class="text-[10px] uppercase tracking-[0.5em] text-slate-300">Auralis — Tous droits réservés</p>
+    </footer>
+
 </body>
 </html>
