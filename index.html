@@ -13,7 +13,6 @@
         .text-vert-eau { color: #82a38e; }
         .bg-sable { background-color: #F4F1EA; }
         .border-sable { border-color: #E5E1D5; }
-        /* Style pour l'affichage fluide du formulaire */
         #formulaire-questions.active { display: block; animation: fadeIn 0.5s ease-in-out; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
     </style>
@@ -29,125 +28,185 @@
                 <a href="#blog" class="hover:text-vert-eau transition">Blog</a>
                 <a href="#contact" class="hover:text-vert-eau transition">Contact</a>
             </div>
+            <a href="#services" class="bg-vert-eau text-white px-5 py-2 rounded-full text-sm font-semibold hover:opacity-90 transition shadow-sm">Réserver</a>
         </div>
     </nav>
 
-    <header id="accueil" class="relative pt-32 pb-16 bg-sable px-6 text-center">
+    <header id="accueil" class="relative pt-32 pb-16 md:pt-48 md:pb-24 bg-sable px-6 text-center border-b border-sable">
         <div class="max-w-4xl mx-auto">
             <h1 class="text-4xl md:text-6xl mb-6 font-bold italic tracking-tight">Auralis Spiritualité</h1>
-            <p class="text-xl md:text-2xl text-slate-600 mb-8 italic">Guidance intuitive et bienveillante.</p>
+            <p class="text-xl md:text-2xl text-slate-600 mb-8 italic">Guidance intuitive et bienveillante pour retrouver votre clarté.</p>
         </div>
     </header>
 
-    <section class="py-16 bg-white px-6">
+    <section id="a-propos" class="py-20 bg-white px-6">
         <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-3xl font-bold italic mb-8">Bonjour, je suis Julie</h2>
-            <p class="text-lg text-slate-700 italic leading-relaxed">
-                Après avoir partagé mes réflexions sur les réseaux sociaux, j’ai choisi de mettre ma sensibilité de médium au service de votre sérénité. Avec Auralis, je vous propose un espace sans jugement pour vous éclairer avec tact et bienveillance.
-            </p>
+            <h2 class="text-3xl md:text-4xl mb-10 italic text-slate-900 font-serif font-bold italic">Bonjour, je suis Julie</h2>
+            <div class="space-y-6 text-lg text-slate-700 italic leading-relaxed">
+                <p>Mon chemin a toujours été guidé par une passion profonde pour le développement personnel. Après avoir partagé mes réflexions sur les réseaux sociaux, j’ai choisi de mettre ma sensibilité de médium au service de votre sérénité.</p>
+                <p>Avec <strong>Auralis Spiritualité</strong>, je vous propose un espace sans jugement pour vous éclairer avec tact, authenticité et bienveillance.</p>
+            </div>
+            <div class="h-px w-24 bg-vert-eau mx-auto mt-12"></div>
         </div>
     </section>
 
-    <section id="services" class="py-20 px-6 bg-sable/30 border-y border-sable">
+    <section id="services" class="py-24 px-6 bg-sable/30 border-y border-sable">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl md:text-5xl text-center mb-16 italic font-bold">Mes Accompagnements</h2>
-            <div class="grid lg:grid-cols-3 gap-8">
+            <div class="grid lg:grid-cols-3 gap-8 items-stretch">
                 
-                <div class="bg-white border border-sable rounded-[40px] p-8 shadow-sm border-t-8 border-t-vert-eau flex flex-col">
+                <div class="bg-white border border-sable rounded-[40px] p-8 shadow-sm hover:shadow-xl transition-all border-t-8 border-t-vert-eau flex flex-col">
                     <h3 class="text-2xl font-bold mb-2">Séance Individuelle</h3>
-                    <p class="text-3xl font-light text-vert-eau italic mb-6">35 €</p>
-                    <p class="text-sm mb-8 text-slate-600 italic flex-grow">Séance de 30 min focalisée sur une problématique précise.</p>
-                    <div class="space-y-3">
-                        <a href="https://calendly.com/julia-ferrant-17" target="_blank" class="block text-center bg-slate-800 text-white py-4 rounded-2xl font-bold uppercase text-[10px] tracking-widest">1. Réserver</a>
-                        <a href="https://www.paypal.com/ncp/payment/9VEZSMPJY62KG" target="_blank" class="block text-center border-2 border-vert-eau text-vert-eau py-4 rounded-2xl font-bold uppercase text-[10px] tracking-widest">2. Régler</a>
+                    <p class="text-3xl font-light text-vert-eau italic mb-4">35 €</p>
+                    <p class="text-sm mb-8 text-slate-500 italic uppercase tracking-widest font-bold">30 min • Accompagnement spirituel</p>
+                    <p class="text-sm mb-8 text-slate-600 italic flex-grow">Une séance focalisée sur une problématique précise pour débloquer votre situation avec douceur.</p>
+                    <div class="mt-auto space-y-3">
+                        <a href="https://calendly.com/julia-ferrant-17" target="_blank" class="block text-center bg-slate-800 text-white py-4 rounded-2xl font-bold uppercase text-[10px] tracking-widest">1. Réserver mon créneau</a>
+                        <a href="https://www.paypal.com/ncp/payment/9VEZSMPJY62KG" target="_blank" class="block text-center border-2 border-vert-eau text-vert-eau py-4 rounded-2xl font-bold uppercase text-[10px] tracking-widest">2. Régler la séance</a>
                     </div>
                 </div>
 
-                <div class="bg-white border border-sable rounded-[40px] p-8 shadow-sm border-t-8 border-t-amber-700 flex flex-col lg:scale-105 z-10">
+                <div class="bg-white border border-sable rounded-[40px] p-8 shadow-sm hover:shadow-xl transition-all border-t-8 border-t-amber-700 flex flex-col lg:scale-105 z-10">
                     <h3 class="text-2xl font-bold mb-2">Thème Astral</h3>
-                    <p class="text-3xl font-light text-amber-700 italic mb-6">40 €</p>
-                    <p class="text-sm mb-8 text-slate-600 italic flex-grow">Lecture de 45 min pour comprendre vos forces et vos énergies actuelles.</p>
-                    <div class="space-y-3">
-                        <a href="https://calendly.com/julia-ferrant-17" target="_blank" class="block text-center bg-amber-700 text-white py-4 rounded-2xl font-bold uppercase text-[10px] tracking-widest">1. Réserver</a>
-                        <a href="LIEN_PAYPAL_40E" target="_blank" class="block text-center border-2 border-amber-700 text-amber-700 py-4 rounded-2xl font-bold uppercase text-[10px] tracking-widest">2. Régler</a>
+                    <p class="text-3xl font-light text-amber-700 italic mb-4">40 €</p>
+                    <p class="text-sm mb-8 text-slate-500 italic uppercase tracking-widest font-bold">45 min • Lecture intuitive</p>
+                    <p class="text-sm mb-8 text-slate-600 italic flex-grow">Lecture introspective pour comprendre vos forces, vos défis et les énergies qui vous influencent.</p>
+                    <div class="mt-auto space-y-3">
+                        <a href="https://calendly.com/julia-ferrant-17" target="_blank" class="block text-center bg-amber-700 text-white py-4 rounded-2xl font-bold uppercase text-[10px] tracking-widest">1. Réserver mon créneau</a>
+                        <a href="TON_LIEN_PAYPAL_40E" target="_blank" class="block text-center border-2 border-amber-700 text-amber-700 py-4 rounded-2xl font-bold uppercase text-[10px] tracking-widest">2. Régler la séance</a>
                     </div>
                 </div>
 
-                <div class="bg-white border border-sable rounded-[40px] p-8 shadow-sm border-t-8 border-t-slate-800 flex flex-col">
+                <div class="bg-white border border-sable rounded-[40px] p-8 shadow-sm hover:shadow-xl transition-all border-t-8 border-t-slate-800 flex flex-col">
                     <h3 class="text-2xl font-bold mb-2">Divination Pendule</h3>
-                    <p class="text-3xl font-light text-slate-900 italic mb-6">25 €</p>
-                    <p class="text-sm mb-8 text-slate-600 italic flex-grow">Jusqu'à 10 questions. Retour vocal WhatsApp sous 48h.</p>
-                    <div class="space-y-3">
-                        <a href="LIEN_PAYPAL_25E" target="_blank" class="block text-center border-2 border-slate-800 text-slate-800 py-4 rounded-2xl font-bold uppercase text-[10px] tracking-widest">1. Régler via PayPal</a>
-                        <button onclick="document.getElementById('formulaire-questions').classList.add('active'); window.location.href='#contact';" class="w-full bg-slate-800 text-white py-4 rounded-2xl font-bold uppercase text-[10px] tracking-widest hover:bg-slate-700">2. J'ai réglé, je pose mes questions</button>
+                    <p class="text-3xl font-light text-slate-900 italic mb-4">25 €</p>
+                    <p class="text-sm mb-8 text-slate-500 italic uppercase tracking-widest font-bold">WhatsApp • Sans rendez-vous</p>
+                    <p class="text-sm mb-8 text-slate-600 italic flex-grow">Jusqu'à 10 questions précises. Recevez vos réponses par message vocal WhatsApp sous 48h.</p>
+                    <div class="mt-auto space-y-3">
+                        <a href="TON_LIEN_PAYPAL_25E" target="_blank" class="block text-center border-2 border-slate-800 text-slate-800 py-4 rounded-2xl font-bold uppercase text-[10px] tracking-widest hover:bg-slate-800 hover:text-white transition">1. Régler via PayPal</a>
+                        <button onclick="document.getElementById('formulaire-questions').classList.add('active'); window.location.href='#contact';" class="w-full bg-slate-800 text-white py-4 rounded-2xl font-bold uppercase text-[10px] tracking-widest">2. J'ai réglé, j'envoie mes questions</button>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <section id="blog" class="py-20 bg-white px-6">
+    <section id="blog" class="py-24 px-6 bg-white">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl text-center mb-12 italic font-bold">Le Cercle d'Éveil</h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <a href="blog/blog-vieille-ame.html" class="p-8 bg-sable/50 rounded-3xl hover:bg-white border border-transparent hover:border-vert-eau transition-all shadow-sm">
-                    <h3 class="font-bold italic">Vieille Âme</h3>
+            <h2 class="text-3xl md:text-5xl text-center mb-16 italic font-bold">Le Cercle d'Éveil</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <a href="blog/blog-vieille-ame.html" class="group p-8 bg-sable/50 rounded-[32px] border border-transparent hover:border-vert-eau hover:bg-white hover:shadow-xl transition-all text-center">
+                    <span class="text-vert-eau text-[10px] font-bold uppercase tracking-widest">Âme</span>
+                    <h3 class="text-xl font-bold italic mt-2 mb-2">Vieille Âme</h3>
+                    <p class="text-xs text-slate-400 italic">Comprendre votre décalage</p>
                 </a>
-                <a href="blog/blog-alimentation.html" class="p-8 bg-sable/50 rounded-3xl hover:bg-white border border-transparent hover:border-vert-eau transition-all shadow-sm">
-                    <h3 class="font-bold italic">Alimentation Vibratoire</h3>
+                <a href="blog/blog-alimentation.html" class="group p-8 bg-sable/50 rounded-[32px] border border-transparent hover:border-vert-eau hover:bg-white hover:shadow-xl transition-all text-center">
+                    <span class="text-vert-eau text-[10px] font-bold uppercase tracking-widest">Énergie</span>
+                    <h3 class="text-xl font-bold italic mt-2 mb-2">Alimentation Vibratoire</h3>
+                    <p class="text-xs text-slate-400 italic">Taux énergétique & Signatures</p>
                 </a>
-                <a href="blog/blog-heures-miroirs.html" class="p-8 bg-sable/50 rounded-3xl hover:bg-white border border-transparent hover:border-vert-eau transition-all shadow-sm">
-                    <h3 class="font-bold italic">Heures Miroirs</h3>
+                <a href="blog/blog-heures-miroirs.html" class="group p-8 bg-sable/50 rounded-[32px] border border-transparent hover:border-vert-eau hover:bg-white hover:shadow-xl transition-all text-center">
+                    <span class="text-vert-eau text-[10px] font-bold uppercase tracking-widest">Signes</span>
+                    <h3 class="text-xl font-bold italic mt-2 mb-2">Heures Miroirs</h3>
+                    <p class="text-xs text-slate-400 italic">Messages de 11h11 à 22h22</p>
+                </a>
+                <a href="blog/blog-lithotherapie.html" class="group p-8 bg-sable/50 rounded-[32px] border border-transparent hover:border-vert-eau hover:bg-white hover:shadow-xl transition-all text-center">
+                    <span class="text-vert-eau text-[10px] font-bold uppercase tracking-widest">Minéraux</span>
+                    <h3 class="text-xl font-bold italic mt-2 mb-2">Pouvoir des Pierres</h3>
+                    <p class="text-xs text-slate-400 italic">Alliés de votre sérénité</p>
+                </a>
+                <a href="blog/blog-corps-etherique.html" class="group p-8 bg-sable/50 rounded-[32px] border border-transparent hover:border-vert-eau hover:bg-white hover:shadow-xl transition-all text-center">
+                    <span class="text-vert-eau text-[10px] font-bold uppercase tracking-widest">Anatomie</span>
+                    <h3 class="text-xl font-bold italic mt-2 mb-2">Corps Éthérique</h3>
+                    <p class="text-xs text-slate-400 italic">Ressentir l'invisible</p>
+                </a>
+                <a href="blog/blog-intention.html" class="group p-8 bg-sable/50 rounded-[32px] border border-transparent hover:border-vert-eau hover:bg-white hover:shadow-xl transition-all text-center">
+                    <span class="text-vert-eau text-[10px] font-bold uppercase tracking-widest">Médiumnité</span>
+                    <h3 class="text-xl font-bold italic mt-2 mb-2">L'Intention</h3>
+                    <p class="text-xs text-slate-400 italic">Clé de connexion spirituelle</p>
+                </a>
+                <a href="blog/blog-lune.html" class="group p-8 bg-sable/50 rounded-[32px] border border-transparent hover:border-vert-eau hover:bg-white hover:shadow-xl transition-all text-center">
+                    <span class="text-vert-eau text-[10px] font-bold uppercase tracking-widest">Cycles</span>
+                    <h3 class="text-xl font-bold italic mt-2 mb-2">Rituels de Lune</h3>
+                    <p class="text-xs text-slate-400 italic">Vivre avec les phases</p>
+                </a>
+                <a href="blog/blog-synchronicites.html" class="group p-8 bg-sable/50 rounded-[32px] border border-transparent hover:border-vert-eau hover:bg-white hover:shadow-xl transition-all text-center">
+                    <span class="text-vert-eau text-[10px] font-bold uppercase tracking-widest">Guidance</span>
+                    <h3 class="text-xl font-bold italic mt-2 mb-2">Synchronicités</h3>
+                    <p class="text-xs text-slate-400 italic">Apprendre à lire les signes</p>
+                </a>
+                <a href="blog/blog-protection.html" class="group p-8 bg-sable/50 rounded-[32px] border border-transparent hover:border-vert-eau hover:bg-white hover:shadow-xl transition-all text-center">
+                    <span class="text-vert-eau text-[10px] font-bold uppercase tracking-widest">Énergie</span>
+                    <h3 class="text-xl font-bold italic mt-2 mb-2">Protection</h3>
+                    <p class="text-xs text-slate-400 italic">Ne plus être une éponge</p>
                 </a>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-24 bg-sable px-6">
+    <section class="py-20 px-6 bg-sable/30 border-y border-sable">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl text-center mb-16 italic font-bold">Mon Contrat de Confiance</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-[10px] italic leading-tight uppercase tracking-widest">
+                <div class="p-6 bg-white rounded-2xl border border-sable shadow-sm">
+                    <h4 class="font-bold text-vert-eau mb-2">Bienveillance</h4>
+                    <p class="text-slate-400">Sans jugement</p>
+                </div>
+                <div class="p-6 bg-white rounded-2xl border border-sable shadow-sm">
+                    <h4 class="font-bold text-vert-eau mb-2">Discrétion</h4>
+                    <p class="text-slate-400">Secret professionnel</p>
+                </div>
+                <div class="p-6 bg-white rounded-2xl border border-sable shadow-sm">
+                    <h4 class="font-bold text-vert-eau mb-2">Authenticité</h4>
+                    <p class="text-slate-400">Sincérité & Tact</p>
+                </div>
+                <div class="p-6 bg-white rounded-2xl border border-sable shadow-sm">
+                    <h4 class="font-bold text-vert-eau mb-2">Libre-Arbitre</h4>
+                    <p class="text-slate-400">Votre souveraineté</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-white px-6">
         <div class="max-w-2xl mx-auto">
-            
             <div id="formulaire-questions" class="hidden bg-white p-10 rounded-[40px] shadow-2xl border border-sable">
-                <h2 class="text-2xl font-bold mb-6 italic text-center">Formulaire de Questions (Pendule)</h2>
-                <p class="text-rose-500 font-bold text-center text-[10px] uppercase mb-8">Attention : Julie traitera votre demande uniquement si le règlement de 25€ est confirmé.</p>
-                
+                <h2 class="text-2xl font-bold mb-6 italic text-center">Vos 10 questions pour Julie</h2>
                 <form action="https://formspree.io/f/mreegdyd" method="POST" class="space-y-4">
-                    <input type="text" name="name" placeholder="Votre Nom et Prénom" required class="w-full p-4 rounded-xl border border-sable outline-none focus:border-vert-eau italic">
+                    <input type="text" name="name" placeholder="Nom et Prénom" required class="w-full p-4 rounded-xl border border-sable outline-none focus:border-vert-eau italic">
                     <input type="email" name="email" placeholder="Votre Email" required class="w-full p-4 rounded-xl border border-sable outline-none focus:border-vert-eau italic">
-                    <input type="tel" name="phone" placeholder="Votre Numéro WhatsApp (pour le retour vocal)" required class="w-full p-4 rounded-xl border border-sable outline-none focus:border-vert-eau italic">
-                    <textarea name="questions" rows="6" placeholder="Listez vos 10 questions précises ici..." required class="w-full p-4 rounded-xl border border-sable outline-none focus:border-vert-eau italic"></textarea>
-                    
+                    <input type="tel" name="phone" placeholder="Numéro WhatsApp (retour vocal)" required class="w-full p-4 rounded-xl border border-sable outline-none focus:border-vert-eau italic">
+                    <textarea name="questions" rows="6" placeholder="Listez ici vos questions..." required class="w-full p-4 rounded-xl border border-sable outline-none focus:border-vert-eau italic"></textarea>
                     <div class="flex items-center gap-3 py-2">
-                        <input type="checkbox" required id="reglement" class="accent-vert-eau">
-                        <label for="reglement" class="text-xs italic text-slate-500 leading-tight">Je certifie avoir effectué mon règlement de 25€ via PayPal.</label>
+                        <input type="checkbox" required class="accent-vert-eau">
+                        <label class="text-[10px] italic text-slate-400 uppercase tracking-widest">Je certifie avoir réglé ma séance de 25€.</label>
                     </div>
-                    
-                    <button type="submit" class="w-full bg-vert-eau text-white py-4 rounded-xl font-bold uppercase tracking-widest text-[10px]">Envoyer mes questions à Julie</button>
+                    <button type="submit" class="w-full bg-vert-eau text-white py-4 rounded-xl font-bold uppercase tracking-widest text-[10px]">Envoyer mes questions</button>
                 </form>
             </div>
-
-            <div id="contact-standard" class="text-center">
-                <p class="italic text-slate-400">Pour toute question sur mes services, merci de m'envoyer un mail à : <br><strong>julia.ferrant.17@gmail.com</strong></p>
+            <div id="contact-standard" class="text-center mt-8">
+                <p class="italic text-slate-400">Une question ? Un doute ?<br><strong>julia.ferrant.17@gmail.com</strong></p>
             </div>
-
         </div>
     </section>
 
     <footer class="bg-slate-900 text-slate-400 py-16 px-6 text-[11px] leading-loose">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12 border-b border-slate-800 pb-12">
             <div>
-                <h4 class="text-white text-lg font-bold mb-4 italic">Julie Bain — Auralis</h4>
-                <p>SIRET : 80874427000030<br>16 avenue d’Aquitaine, 17150 Mirambeau</p>
+                <h4 class="text-white text-lg font-bold mb-4 italic">Auralis Spiritualité</h4>
+                <p>Accompagnement et guidance intuitive par Julie Bain.</p>
+                <p class="mt-2 text-vert-eau font-medium italic">julia.ferrant.17@gmail.com</p>
             </div>
             <div>
-                <h4 class="text-white text-lg font-bold mb-4 italic">Infos</h4>
-                <p>Hébergement : Vercel Inc.<br>La guidance ne remplace pas un diagnostic médical.</p>
+                <h4 class="text-white text-lg font-bold mb-4 italic">Mentions Légales</h4>
+                <p>Éditeur : Julie Bain<br>Micro-entreprise • SIRET : 80874427000030<br>Siège : 16 avenue d’Aquitaine, 17150 Mirambeau</p>
             </div>
             <div>
-                <h4 class="text-white text-lg font-bold mb-4 italic">Contact</h4>
-                <p>julia.ferrant.17@gmail.com</p>
+                <h4 class="text-white text-lg font-bold mb-4 italic">Hébergement</h4>
+                <p>Vercel Inc.<br>340 S Lemon Ave #1192, Walnut, CA 91789, USA</p>
             </div>
         </div>
+        <p class="text-center pt-8 uppercase tracking-[0.3em]">&copy; 2026 — La guidance ne remplace pas un avis médical.</p>
     </footer>
 
 </body>
