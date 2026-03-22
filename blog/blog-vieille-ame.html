@@ -7,233 +7,272 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { font-family: 'Inter', sans-serif; color: #334155; }
         h1, h2, h3 { font-family: 'Playfair Display', serif; }
         .bg-vert-eau { background-color: #A3C1AD; }
         .text-vert-eau { color: #82a38e; }
-        .bg-sable { background-color: #F4F1EA; }
-        .line-accent { height: 1px; width: 60px; background-color: #A3C1AD; margin: 2rem auto; }
+        .bg-sable { background-color: #FAF9F6; }
+        
+        /* Lettrine élégante pour l'introduction */
+        .first-letter::first-letter {
+            font-family: 'Playfair Display', serif;
+            float: left;
+            font-size: 4.5rem;
+            line-height: 3.5rem;
+            padding-right: 0.75rem;
+            color: #A3C1AD;
+            font-style: italic;
+        }
+
+        /* Séparateur doux */
+        .divider {
+            height: 1px;
+            width: 80px;
+            background: linear-gradient(to right, transparent, #A3C1AD, transparent);
+            margin: 4rem auto;
+        }
+
+        /* Style des listes à puces personnalisé */
+        .custom-list li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+        .custom-list li::before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            color: #A3C1AD;
+            font-size: 0.8rem;
+        }
     </style>
 </head>
-<body class="bg-white text-slate-800 leading-relaxed">
+<body class="bg-white selection:bg-vert-eau/20">
 
-    <!-- Navigation -->
-    <nav class="p-8">
-        <a href="../index.html" class="text-vert-eau font-bold uppercase tracking-widest text-[10px] hover:underline">← Retour à l'accueil</a>
+    <!-- Barre de retour discrète -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 border-b border-slate-100">
+        <div class="max-w-4xl mx-auto px-6 py-4">
+            <a href="../index.html" class="text-[10px] uppercase tracking-[0.2em] font-bold text-slate-400 hover:text-vert-eau transition-colors flex items-center gap-2">
+                <span>←</span> Retour à l'univers Auralis
+            </a>
+        </div>
     </nav>
 
-    <article class="max-w-3xl mx-auto px-6 pb-24">
-        
-        <!-- Header de l'article -->
-        <header class="text-center mb-16">
-            <span class="text-vert-eau uppercase tracking-[0.3em] text-[10px] font-bold">Âme & Karma</span>
-            <h1 class="text-4xl md:text-5xl font-bold italic mt-6 mb-4 text-slate-900 leading-tight">Vieille âme : comprendre votre décalage</h1>
-            <div class="line-accent"></div>
-        </header>
+    <article class="pt-32 pb-24 px-6">
+        <div class="max-w-3xl mx-auto">
+            
+            <!-- En-tête de l'article -->
+            <header class="text-center mb-20">
+                <span class="inline-block px-4 py-1 border border-vert-eau text-vert-eau text-[9px] uppercase tracking-[0.3em] font-bold rounded-full mb-8">
+                    Sagesse Intérieure
+                </span>
+                <h1 class="text-4xl md:text-6xl font-bold italic text-slate-900 leading-tight mb-8">
+                    Vieille âme : comprendre votre décalage
+                </h1>
+                <p class="text-slate-400 italic text-sm tracking-widest uppercase">Par Julie Bain</p>
+            </header>
+
+            <!-- Introduction avec Lettrine -->
+            <div class="space-y-8 text-lg md:text-xl leading-relaxed italic text-slate-700">
+                <p class="first-letter">
+                    Il y a des personnes qui ont, depuis toujours, cette étrange impression de ne pas être tout à fait “comme les autres”. Elles ressentent beaucoup.
+                </p>
+
+                <p>Elles observent énormément.</p>
+
+                <p>Elles ont parfois l’impression d’être trop profondes pour certains échanges, trop sensibles pour certains environnements, ou trop lucides pour se contenter du superficiel.</p>
+                
+                <p class="text-2xl text-slate-900 font-medium py-4">
+                    Et souvent, elles finissent par se poser cette question : <br>
+                    <span class="text-vert-eau">Pourquoi est-ce que je me sens autant en décalage ?</span>
+                </p>
+
+                <p>Si vous vous reconnaissez là-dedans, il est possible que vous soyez ce que l’on appelle une vieille âme.</p>
+
+                <p>Non, cela ne veut pas dire que vous êtes “vieux dans votre tête” au sens où vous aimez les tisanes à 18h et les plaids toute l’année… même si, entre nous, cela peut aussi faire partie du package.</p>
+
+                <p>Être une vieille âme, c’est surtout porter en soi une profondeur, une maturité intérieure et une sensibilité particulière qui donnent parfois la sensation d’être “ailleurs”, ou “à part”.</p>
+
+                <p>Dans cet article, nous allons essayer de comprendre ce qu’est une vieille âme, pourquoi ce décalage peut être si fort, et surtout comment mieux vivre avec.</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Section 1 -->
+            <section class="space-y-8">
+                <h2 class="text-3xl md:text-4xl font-bold italic text-slate-900">Qu’est-ce qu’une vieille âme ?</h2>
+                
+                <div class="text-lg italic text-slate-700 space-y-6">
+                    <p>Dans une approche spirituelle, une vieille âme est une âme qui aurait déjà traversé de nombreuses expériences d’incarnation.</p>
+                    <p>Elle aurait donc accumulé au fil du temps une forme de sagesse, d’intuition, de recul et de compréhension plus fine de la vie.</p>
+                    <p>Bien sûr, chacun est libre de croire ou non à cette vision. Mais au-delà de la croyance, beaucoup de personnes se reconnaissent dans les traits souvent associés à la vieille âme :</p>
+                    
+                    <ul class="custom-list bg-sable p-8 rounded-[2rem] border border-slate-100 shadow-sm">
+                        <li>une sensation d’avoir toujours été “différente” ;</li>
+                        <li>une grande sensibilité émotionnelle ;</li>
+                        <li>une attirance pour les sujets profonds, spirituels ou existentiels ;</li>
+                        <li>une difficulté avec les relations superficielles ;</li>
+                        <li>un besoin de sens très fort ;</li>
+                        <li>une impression d’être fatiguée du bruit du monde.</li>
+                    </ul>
+
+                    <p>La vieille âme ne cherche pas forcément à se faire remarquer. Au contraire, elle se sent souvent plus à l’aise dans l’authenticité que dans la démonstration.</p>
+                    <p>Elle aime comprendre ce qu’il y a derrière les mots, derrière les comportements, derrière les apparences.</p>
+                    <p>En résumé, ce n’est pas une personne “au-dessus” des autres. C’est simplement une personne qui vit souvent les choses avec plus de profondeur.</p>
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section class="mt-20 space-y-8">
+                <h2 class="text-3xl md:text-4xl font-bold italic text-slate-900">Pourquoi les vieilles âmes se sentent-elles en décalage ?</h2>
+                
+                <div class="text-lg italic text-slate-700 space-y-8">
+                    <p>Le décalage est probablement l’un des ressentis les plus fréquents chez les vieilles âmes. Ce décalage peut se manifester très tôt.</p>
+                    <p>Dès l’enfance, certaines personnes sentent qu’elles ne vibrent pas sur la même fréquence que leur entourage. Elles peuvent aimer la solitude, observer beaucoup, se sentir “trop sérieuses” ou au contraire incomprises dans leur manière d’être.</p>
+                    
+                    <div class="space-y-12 mt-12">
+                        <div class="border-l border-vert-eau/30 pl-8">
+                            <h3 class="text-xs uppercase tracking-[0.2em] font-bold text-vert-eau mb-4">1. Un rapport différent aux relations</h3>
+                            <p>Une vieille âme a souvent du mal avec les échanges vides, les faux-semblants, les relations basées uniquement sur l’intérêt ou l’apparence. Elle a besoin de vrai. De profondeur. De sincérité.</p>
+                            <p class="mt-4 text-slate-400 uppercase text-[10px] tracking-widest">Résultat : elle peut se sentir seule même entourée.</p>
+                            <p class="mt-2">Pas parce qu’elle rejette les autres, mais parce qu’elle a besoin d’un lien plus authentique pour vraiment se sentir connectée.</p>
+                        </div>
+
+                        <div class="border-l border-vert-eau/30 pl-8">
+                            <h3 class="text-xs uppercase tracking-[0.2em] font-bold text-vert-eau mb-4">2. Une hypersensibilité au monde</h3>
+                            <p>Beaucoup de vieilles âmes ressentent intensément les ambiances, les tensions, les non-dits, les émotions des autres. Elles peuvent entrer dans un lieu et sentir immédiatement si quelque chose “sonne faux”.</p>
+                            <p class="mt-4">Elles peuvent aussi être facilement épuisées par l’agitation, les conflits, les environnements trop stimulants ou les personnes énergivores. Ce n’est pas de la fragilité. C’est une forme de réceptivité intérieure très forte.</p>
+                        </div>
+
+                        <div class="border-l border-vert-eau/30 pl-8">
+                            <h3 class="text-xs uppercase tracking-[0.2em] font-bold text-vert-eau mb-4">3. Un besoin de sens constant</h3>
+                            <p>Les vieilles âmes ont souvent du mal à faire les choses “juste pour faire comme tout le monde”. Elles ont besoin de comprendre pourquoi elles sont là, quel est leur rôle, ce qui les anime vraiment.</p>
+                            <p class="mt-4">Le travail sans âme, les relations sans profondeur, les projets sans alignement peuvent rapidement leur donner une sensation de vide. Là où d’autres avancent sans trop se poser de questions, la vieille âme, elle, veut ressentir que sa vie a du sens.</p>
+                            <p class="mt-4">Et parfois, ce besoin de sens peut lui donner l’impression d’être déconnectée d’un monde qui va vite, parle fort, et ne prend pas toujours le temps de regarder à l’intérieur.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="divider"></div>
+
+            <!-- Section 3 : Signes -->
+            <section class="space-y-8">
+                <h2 class="text-3xl md:text-4xl font-bold italic text-slate-900">Les signes qui peuvent indiquer que vous êtes une vieille âme</h2>
+                <p class="text-lg italic text-slate-700">Il n’existe pas de test officiel avec diplôme encadré et tampon cosmique, évidemment. Mais certains signes reviennent souvent. Vous pourriez être une vieille âme si :</p>
+                
+                <ul class="custom-list grid md:grid-cols-1 gap-2 italic text-slate-700 text-lg">
+                    <li>vous vous êtes souvent senti(e) “à part” sans toujours savoir pourquoi ;</li>
+                    <li>vous avez une maturité émotionnelle précoce ;</li>
+                    <li>vous aimez la solitude, non par rejet, mais parce qu’elle vous ressource ;</li>
+                    <li>vous ressentez fortement les émotions des autres ;</li>
+                    <li>vous cherchez naturellement le sens profond des choses ;</li>
+                    <li>les conversations superficielles vous fatiguent vite ;</li>
+                    <li>vous avez l’impression de “savoir” certaines choses intuitivement ;</li>
+                    <li>vous êtes attiré(e) par la spiritualité, l’introspection, la voyance ou la connaissance de soi ;</li>
+                    <li>vous avez parfois le sentiment d’être fatigué(e) de ce monde sans être dépressif(ve) pour autant ;</li>
+                    <li>vous ressentez une forme de nostalgie que vous ne pouvez pas toujours expliquer.</li>
+                </ul>
+
+                <p class="text-lg italic text-slate-500 border-t border-slate-100 pt-8">
+                    Beaucoup de vieilles âmes portent en elles une mélancolie légère, comme si leur cœur se souvenait de quelque chose que leur mental ne peut pas nommer.
+                </p>
+            </section>
+
+            <!-- Citation en exergue -->
+            <div class="my-20 bg-slate-900 text-white p-12 md:p-16 rounded-[3rem] text-center shadow-2xl relative overflow-hidden">
+                <span class="absolute top-4 left-10 text-9xl text-white/10 font-serif">“</span>
+                <p class="text-2xl md:text-3xl italic font-serif leading-relaxed relative z-10">
+                    Le problème n’est pas votre profondeur. Le problème, c’est de croire qu’elle est de trop.
+                </p>
+            </div>
+
+            <!-- Section 4 -->
+            <section class="mt-20 space-y-8 text-lg italic text-slate-700">
+                <h2 class="text-3xl md:text-4xl font-bold italic text-slate-900">Le décalage n’est pas un défaut</h2>
+                <p>Quand on se sent différent, on peut vite croire qu’il y a “quelque chose qui ne va pas”. On peut se demander pourquoi on n’arrive pas à être plus léger, plus détaché, plus simple, plus “normal”.</p>
+                <p>On peut même essayer, pendant des années, de se mouler dans des schémas qui ne nous correspondent pas. Mais le problème n’est pas votre profondeur.</p>
+                <p>Être une vieille âme ne signifie pas être condamné(e) à la solitude, ni vivre en marge du monde. Cela signifie simplement que votre façon de ressentir la vie demande peut-être plus de respect, plus d’écoute et plus de conscience.</p>
+                <p>Votre décalage n’est pas forcément là pour vous exclure. Il est peut-être là pour vous inviter à mieux vous connaître.</p>
+            </section>
+
+            <!-- Section 5 -->
+            <section class="mt-20 space-y-8 text-lg italic text-slate-700">
+                <h2 class="text-3xl md:text-4xl font-bold italic text-slate-900">Pourquoi la voyance peut aider une vieille âme</h2>
+                <p>Quand on se sent en décalage, on cherche souvent des réponses. Pas par curiosité légère, mais parce qu’on sent au fond de soi qu’il y a quelque chose à comprendre.</p>
+                <p>C’est là que la voyance peut être un véritable soutien. Une consultation de voyance n’est pas seulement là pour “prédire l’avenir”. Elle peut aussi permettre de mettre en lumière certains blocages, de mieux comprendre un ressenti intérieur, de confirmer une intuition, ou de donner du sens à ce que l’on traverse.</p>
+                <p>Pour une vieille âme, la voyance peut être précieuse parce qu’elle offre un espace où l’on ne se sent pas jugé(e) pour sa sensibilité, son intuition ou sa profondeur. Elle peut aider à répondre à des questions comme :</p>
+                
+                <ul class="custom-list italic">
+                    <li>Pourquoi est-ce que je me sens aussi différent(e) ?</li>
+                    <li>Pourquoi certaines relations me fatiguent-elles autant ?</li>
+                    <li>Quel est le sens de cette période de ma vie ?</li>
+                    <li>Pourquoi ai-je l’impression de porter quelque chose de plus grand que moi ?</li>
+                    <li>Comment retrouver ma place sans me trahir ?</li>
+                </ul>
+                <p>Parfois, entendre certaines choses dans un cadre bienveillant permet de se réconcilier avec soi-même.</p>
+            </section>
+
+            <!-- Section 6 -->
+            <section class="mt-20 space-y-8 text-lg italic text-slate-700">
+                <h2 class="text-3xl md:text-4xl font-bold italic text-slate-900">Comment mieux vivre son décalage ?</h2>
+                <p>Comprendre est une première étape. Mais apprendre à mieux vivre ce décalage au quotidien est tout aussi important.</p>
+                
+                <div class="grid gap-12 mt-12">
+                    <div class="bg-sable p-8 rounded-3xl">
+                        <h4 class="font-bold text-slate-900 mb-2">Accueillir sa nature au lieu de la combattre</h4>
+                        <p>Vous n’avez pas besoin de devenir plus superficiel(le) pour être accepté(e). Vous n’avez pas besoin de vous forcer à être partout, avec tout le monde, tout le temps. Votre sensibilité n’est pas une erreur de fabrication. Elle fait partie de vous.</p>
+                    </div>
+                    <div class="bg-sable p-8 rounded-3xl">
+                        <h4 class="font-bold text-slate-900 mb-2">Choisir des environnements qui vous respectent</h4>
+                        <p>Certaines personnes, certains lieux, certaines dynamiques épuisent profondément les vieilles âmes. Il est important d’apprendre à reconnaître ce qui vous vide et ce qui vous nourrit. Vous avez le droit de préférer la paix au bruit. La profondeur à la dispersion. L’authenticité à la performance.</p>
+                    </div>
+                    <div class="bg-sable p-8 rounded-3xl">
+                        <h4 class="font-bold text-slate-900 mb-2">Écouter son intuition</h4>
+                        <p>Les vieilles âmes ont souvent une intuition très développée. Mais elles ont parfois appris à la douter pour rentrer dans un cadre plus rationnel ou plus conventionnel. Revenir à son intuition, c’est souvent revenir à sa vérité.</p>
+                    </div>
+                    <div class="bg-sable p-8 rounded-3xl">
+                        <h4 class="font-bold text-slate-900 mb-2">Accepter de ne pas être compris(e) par tout le monde</h4>
+                        <p>C’est une étape parfois difficile, mais libératrice. Tout le monde ne pourra pas comprendre votre façon de ressentir, de penser ou de percevoir la vie. Et ce n’est pas grave. Vous n’êtes pas ici pour être validé(e) par tout le monde. Vous êtes ici pour être aligné(e) avec vous-même.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 7 -->
+            <section class="mt-20 space-y-8 text-lg italic text-slate-700">
+                <h2 class="text-3xl md:text-4xl font-bold italic text-slate-900">Vieille âme : une solitude… ou une mission intérieure ?</h2>
+                <p>Le décalage peut faire souffrir, oui. Mais il peut aussi devenir une force. Parce qu’une vieille âme, lorsqu’elle cesse de se battre contre sa nature, peut devenir une présence apaisante, inspirante, profondément humaine pour les autres.</p>
+                <p>Elle comprend souvent ce que d’autres n’arrivent pas encore à mettre en mots. Elle ressent ce qui se joue derrière les apparences. Elle apporte de la douceur, du recul, de la conscience.</p>
+                <p>Sa mission n’est pas forcément spectaculaire. Elle n’est pas obligée de “changer le monde” en grande pompe. Parfois, sa mission est simplement d’être elle-même. D’oser sa vérité. D’incarner une autre manière d’être au monde, plus consciente, plus sensible, plus authentique. Et cela, c’est déjà immense.</p>
+            </section>
+
+            <!-- Conclusion -->
+            <section class="mt-20 space-y-8 text-lg italic text-slate-700">
+                <h2 class="text-3xl md:text-4xl font-bold italic text-slate-900">En conclusion</h2>
+                <p>Si vous vous sentez en décalage depuis toujours, ce n’est peut-être pas parce que vous êtes “trop” quelque chose. Peut-être que vous êtes simplement une vieille âme dans un monde qui valorise souvent la vitesse plus que la profondeur, le paraître plus que l’authenticité, le bruit plus que l’écoute intérieure.</p>
+                <p>Ce décalage peut être lourd à porter, mais il peut aussi devenir un chemin de compréhension de soi. Apprendre à reconnaître votre sensibilité, votre intuition et votre besoin de sens peut vous aider à transformer ce sentiment d’étrangeté en force intérieure.</p>
+                <p class="text-2xl text-vert-eau font-serif py-8">
+                    Et parfois, se sentir différent(e), ce n’est pas être perdu(e). C’est juste être appelé(e) à se retrouver autrement.
+                </p>
+            </section>
+
+            <!-- Appel à l'action final -->
+            <div class="mt-24 p-12 bg-sable rounded-[3rem] border border-vert-eau/20 text-center relative">
+                <h3 class="text-2xl font-bold mb-6 italic">Ce texte a éveillé une résonance en vous ?</h3>
+                <p class="text-slate-600 mb-10 italic">Je vous accompagne pour mettre de la lumière sur votre chemin et transformer votre décalage en une alliée précieuse.</p>
+                <a href="../index.html#services" class="inline-block bg-slate-900 text-white px-10 py-5 rounded-full font-bold uppercase tracking-[0.2em] text-[10px] hover:bg-vert-eau transition-all shadow-xl">
+                    Prendre rendez-vous avec Julie
+                </a>
+            </div>
 
-        <!-- Corps de l'article - Texte Intégral -->
-        <div class="space-y-6 text-lg text-slate-700 italic leading-relaxed">
-            <p>Il y a des personnes qui ont, depuis toujours, cette étrange impression de ne pas être tout à fait “comme les autres”.<br>Elles ressentent beaucoup.</p>
-
-            <p>Elles observent énormément.</p>
-
-            <p>Elles ont parfois l’impression d’être trop profondes pour certains échanges, trop sensibles pour certains environnements, ou trop lucides pour se contenter du superficiel.<br>Et souvent, elles finissent par se poser cette question :<br><strong>Pourquoi est-ce que je me sens autant en décalage ?</strong></p>
-
-            <p>Si vous vous reconnaissez là-dedans, il est possible que vous soyez ce que l’on appelle une vieille âme.</p>
-
-            <p>Non, cela ne veut pas dire que vous êtes “vieux dans votre tête” au sens où vous aimez les tisanes à 18h et les plaids toute l’année… même si, entre nous, cela peut aussi faire partie du package.</p>
-
-            <p>Être une vieille âme, c’est surtout porter en soi une profondeur, une maturité intérieure et une sensibilité particulière qui donnent parfois la sensation d’être “ailleurs”, ou “à part”.</p>
-
-            <p>Dans cet article, nous allons essayer de comprendre ce qu’est une vieille âme, pourquoi ce décalage peut être si fort, et surtout comment mieux vivre avec.</p>
-
-            <div class="line-accent"></div>
-
-            <h2 class="text-3xl font-bold italic text-slate-900 mt-12 mb-6 underline decoration-vert-eau underline-offset-8">Qu’est-ce qu’une vieille âme ?</h2>
-
-            <p>Dans une approche spirituelle, une vieille âme est une âme qui aurait déjà traversé de nombreuses expériences d’incarnation.</p>
-
-            <p>Elle aurait donc accumulé au fil du temps une forme de sagesse, d’intuition, de recul et de compréhension plus fine de la vie.<br>Bien sûr, chacun est libre de croire ou non à cette vision.</p>
-
-            <p>Mais au-delà de la croyance, beaucoup de personnes se reconnaissent dans les traits souvent associés à la vieille âme :</p>
-
-            <ul class="space-y-4 pl-6 border-l-2 border-vert-eau my-8">
-                <li>— une sensation d’avoir toujours été “différente” ;</li>
-                <li>— une grande sensibilité émotionnelle ;</li>
-                <li>— une attirance pour les sujets profonds, spirituels ou existentiels ;</li>
-                <li>— une difficulté avec les relations superficielles ;</li>
-                <li>— un besoin de sens très fort ;</li>
-                <li>— une impression d’être fatiguée du bruit du monde.</li>
-            </ul>
-
-            <p>La vieille âme ne cherche pas forcément à se faire remarquer.</p>
-
-            <p>Au contraire, elle se sent souvent plus à l’aise dans l’authenticité que dans la démonstration.</p>
-
-            <p>Elle aime comprendre ce qu’il y a derrière les mots, derrière les comportements, derrière les apparences.<br>En résumé, ce n’est pas une personne “au-dessus” des autres.</p>
-
-            <p>C’est simplement une personne qui vit souvent les choses avec plus de profondeur.</p>
-
-            <h2 class="text-3xl font-bold italic text-slate-900 mt-16 mb-6 underline decoration-vert-eau underline-offset-8">Pourquoi les vieilles âmes se sentent-elles en décalage ?</h2>
-
-            <p>Le décalage est probablement l’un des ressentis les plus fréquents chez les vieilles âmes.<br>Ce décalage peut se manifester très tôt.</p>
-
-            <p>Dès l’enfance, certaines personnes sentent qu’elles ne vibrent pas sur la même fréquence que leur entourage. Elles peuvent aimer la solitude, observer beaucoup, se sentir “trop sérieuses” ou au contraire incomprises dans leur manière d’être.</p>
-
-            <p>Plus tard, cela peut se traduire par plusieurs choses.</p>
-
-            <h3 class="text-xl font-bold italic text-vert-eau mt-8 uppercase tracking-widest">1. Un rapport différent aux relations</h3>
-
-            <p>Une vieille âme a souvent du mal avec les échanges vides, les faux-semblants, les relations basées uniquement sur l’intérêt ou l’apparence.<br>Elle a besoin de vrai.</p>
-
-            <p>De profondeur.</p>
-
-            <p>De sincérité.<br>Résultat : elle peut se sentir seule même entourée.</p>
-
-            <p>Pas parce qu’elle rejette les autres, mais parce qu’elle a besoin d’un lien plus authentique pour vraiment se sentir connectée.</p>
-
-            <h3 class="text-xl font-bold italic text-vert-eau mt-8 uppercase tracking-widest">2. Une hypersensibilité au monde</h3>
-
-            <p>Beaucoup de vieilles âmes ressentent intensément les ambiances, les tensions, les non-dits, les émotions des autres.<br>Elles peuvent entrer dans un lieu et sentir immédiatement si quelque chose “sonne faux”.</p>
-
-            <p>Elles peuvent aussi être facilement épuisées par l’agitation, les conflits, les environnements trop stimulants ou les personnes énergivores.<br>Ce n’est pas de la fragilité.</p>
-
-            <p>C’est une forme de réceptivité intérieure très forte.</p>
-            <p>&nbsp;</p>
-            <h3 class="text-xl font-bold italic text-vert-eau mt-8 uppercase tracking-widest">3. Un besoin de sens constant</h3>
-
-            <p>Les vieilles âmes ont souvent du mal à faire les choses “juste pour faire comme tout le monde”.<br>Elles ont besoin de comprendre pourquoi elles sont là, quel est leur rôle, ce qui les anime vraiment.</p>
-
-            <p>Le travail sans âme, les relations sans profondeur, les projets sans alignement peuvent rapidement leur donner une sensation de vide.</p>
-
-            <p>Là où d’autres avancent sans trop se poser de questions, la vieille âme, elle, veut ressentir que sa vie a du sens.<br>Et parfois, ce besoin de sens peut lui donner l’impression d’être déconnectée d’un monde qui va vite, parle fort, et ne prend pas toujours le temps de regarder à l’intérieur.</p>
-
-            <h2 class="text-3xl font-bold italic text-slate-900 mt-16 mb-6 underline decoration-vert-eau underline-offset-8">Les signes qui peuvent indiquer que vous êtes une vieille âme</h2>
-
-            <p>Il n’existe pas de test officiel avec diplôme encadré et tampon cosmique, évidemment.</p>
-
-            <p>Mais certains signes reviennent souvent.<br>Vous pourriez être une vieille âme si :</p>
-
-            <ul class="space-y-4 pl-6 border-l-2 border-vert-eau my-8">
-                <li>— vous vous êtes souvent senti(e) “à part” sans toujours savoir pourquoi ;</li>
-                <li>— vous avez une maturité émotionnelle précoce ;</li>
-                <li>— vous aimez la solitude, non par rejet, mais parce qu’elle vous ressource ;</li>
-                <li>— vous ressentez fortement les émotions des autres ;</li>
-                <li>— vous cherchez naturellement le sens profond des choses ;</li>
-                <li>— les conversations superficielles vous fatiguent vite ;</li>
-                <li>— vous avez l’impression de “savoir” certaines choses intuitivement ;</li>
-                <li>— vous êtes attiré(e) par la spiritualité, l’introspection, la voyance ou la connaissance de soi ;</li>
-                <li>— vous avez parfois le sentiment d’être fatigué(e) de ce monde sans être dépressif(ve) pour autant ;</li>
-                <li>— vous ressentez une forme de nostalgie que vous ne pouvez pas toujours expliquer.</li>
-            </ul>
-
-            <p>Ce dernier point est fréquent.</p>
-
-            <p>Beaucoup de vieilles âmes portent en elles une mélancolie légère, comme si leur cœur se souvenait de quelque chose que leur mental ne peut pas nommer.</p>
-
-            <h2 class="text-3xl font-bold italic text-slate-900 mt-16 mb-6 underline decoration-vert-eau underline-offset-8">Le décalage n’est pas un défaut</h2>
-
-            <p>Quand on se sent différent, on peut vite croire qu’il y a “quelque chose qui ne va pas”.<br>On peut se demander pourquoi on n’arrive pas à être plus léger, plus détaché, plus simple, plus “normal”.</p>
-
-            <p>On peut même essayer, pendant des années, de se mouler dans des schémas qui ne nous correspondent pas.<br>Mais le problème n’est pas votre profondeur.</p>
-
-            <p>Le problème, c’est de croire qu’elle est de trop.<br>Être une vieille âme ne signifie pas être condamné(e) à la solitude, ni vivre en marge du monde.</p>
-
-            <p>Cela signifie simplement que votre façon de ressentir la vie demande peut-être plus de respect, plus d’écoute et plus de conscience.<br>Votre décalage n’est pas forcément là pour vous exclure.</p>
-
-            <p>Il est peut-être là pour vous inviter à mieux vous connaître.</p>
-
-            <h2 class="text-3xl font-bold italic text-slate-900 mt-16 mb-6 underline decoration-vert-eau underline-offset-8">Pourquoi la voyance peut aider une vieille âme</h2>
-
-            <p>Quand on se sent en décalage, on cherche souvent des réponses.</p>
-
-            <p>Pas par curiosité légère, mais parce qu’on sent au fond de soi qu’il y a quelque chose à comprendre.<br>C’est là que la voyance peut être un véritable soutien.</p>
-
-            <p>Une consultation de voyance n’est pas seulement là pour “prédire l’avenir”.</p>
-
-            <p>Elle peut aussi permettre de mettre en lumière certains blocages, de mieux comprendre un ressenti intérieur, de confirmer une intuition, ou de donner du sens à ce que l’on traverse.<br>Pour une vieille âme, la voyance peut être précieuse parce qu’elle offre un espace où l’on ne se sent pas jugé(e) pour sa sensibilité, son intuition ou sa profondeur.</p>
-
-            <p>Elle peut aider à répondre à des questions comme :</p>
-
-            <ul class="space-y-4 pl-6 border-l-2 border-vert-eau my-8">
-                <li>— Pourquoi est-ce que je me sens aussi différent(e) ?</li>
-                <li>— Pourquoi certaines relations me fatiguent-elles autant ?</li>
-                <li>— Quel est le sens de cette période de ma vie ?</li>
-                <li>— Pourquoi ai-je l’impression de porter quelque chose de plus grand que moi ?</li>
-                <li>— Comment retrouver ma place sans me trahir ?</li>
-            </ul>
-
-            <p>Parfois, entendre certaines choses dans un cadre bienveillant permet de se réconcilier avec soi-même.</p>
-
-            <h2 class="text-3xl font-bold italic text-slate-900 mt-16 mb-6 underline decoration-vert-eau underline-offset-8">Comment mieux vivre son décalage quand on est une vieille âme ?</h2>
-
-            <p>Comprendre est une première étape.</p>
-
-            <p>Mais apprendre à mieux vivre ce décalage au quotidien est tout aussi important.</p>
-
-            <p><strong>Accueillir sa nature au lieu de la combattre</strong><br>Vous n’avez pas besoin de devenir plus superficiel(le) pour être accepté(e).</p>
-
-            <p>Vous n’avez pas besoin de vous forcer à être partout, avec tout le monde, tout le temps.<br>Votre sensibilité n’est pas une erreur de fabrication.</p>
-
-            <p>Elle fait partie de vous.</p>
-
-            <p><strong>Choisir des environnements qui vous respectent</strong><br>Certaines personnes, certains lieux, certaines dynamiques épuisent profondément les vieilles âmes.</p>
-
-            <p>Il est important d’apprendre à reconnaître ce qui vous vide et ce qui vous nourrit.<br>Vous avez le droit de préférer la paix au bruit.</p>
-
-            <p>La profondeur à la dispersion.</p>
-
-            <p>L’authenticité à la performance.</p>
-
-            <p><strong>Écouter son intuition</strong><br>Les vieilles âmes ont souvent une intuition très développée.</p>
-
-            <p>Mais elles ont parfois appris à la douter pour rentrer dans un cadre plus rationnel ou plus conventionnel.<br>Revenir à son intuition, c’est souvent revenir à sa vérité.</p>
-
-            <p><strong>Accepter de ne pas être compris(e) par tout le monde</strong><br>C’est une étape parfois difficile, mais libératrice.</p>
-
-            <p>Tout le monde ne pourra pas comprendre votre façon de ressentir, de penser ou de percevoir la vie.<br>Et ce n’est pas grave.</p>
-
-            <p>Vous n’êtes pas ici pour être validé(e) par tout le monde.<br>Vous êtes ici pour être aligné(e) avec vous-même.</p>
-
-            <h2 class="text-3xl font-bold italic text-slate-900 mt-16 mb-6 underline decoration-vert-eau underline-offset-8">Vieille âme : une solitude… ou une mission intérieure ?</h2>
-
-            <p>Le décalage peut faire souffrir, oui.</p>
-
-            <p>Mais il peut aussi devenir une force.<br>Parce qu’une vieille âme, lorsqu’elle cesse de se battre contre sa nature, peut devenir une présence apaisante, inspirante, profondément humaine pour les autres.</p>
-
-            <p>Elle comprend souvent ce que d’autres n’arrivent pas encore à mettre en mots.</p>
-
-            <p>Elle ressent ce qui se joue derrière les apparences.</p>
-
-            <p>Elle apporte de la douceur, du recul, de la conscience.<br>Sa mission n’est pas forcément spectaculaire.</p>
-
-            <p>Elle n’est pas obligée de “changer le monde” en grande pompe.<br>Parfois, sa mission est simplement d’être elle-même.</p>
-
-            <p>D’oser sa vérité.</p>
-
-            <p>D’incarner une autre manière d’être au monde, plus consciente, plus sensible, plus authentique.<br>Et cela, c’est déjà immense.</p>
-
-            <h2 class="text-3xl font-bold italic text-slate-900 mt-16 mb-6 underline decoration-vert-eau underline-offset-8">En conclusion</h2>
-
-            <p>Si vous vous sentez en décalage depuis toujours, ce n’est peut-être pas parce que vous êtes “trop” quelque chose.<br>Peut-être que vous êtes simplement une vieille âme dans un monde qui valorise souvent la vitesse plus que la profondeur, le paraître plus que l’authenticité, le bruit plus que l’écoute intérieure.</p>
-
-            <p>Ce décalage peut être lourd à porter, mais il peut aussi devenir un chemin de compréhension de soi.<br>Apprendre à reconnaître votre sensibilité, votre intuition et votre besoin de sens peut vous aider à transformer ce sentiment d’étrangeté en force intérieure.</p>
-
-            <p>Et parfois, se sentir différent(e), ce n’est pas être perdu(e).<br>C’est juste être appelé(e) à se retrouver autrement.</p>
-            <p>&nbsp;</p>
         </div>
-
-        <!-- Bouton de conversion final -->
-        <footer class="mt-20 p-12 bg-slate-900 rounded-[40px] text-white text-center shadow-2xl">
-            <h3 class="text-2xl font-bold mb-6 italic">Ce texte résonne en vous ?</h3>
-            <p class="text-slate-400 mb-10 italic">Si vous souhaitez explorer votre propre cheminement et mettre de la clarté sur votre décalage, je vous accompagne lors d'une guidance personnalisée.</p>
-            <a href="../index.html#services" class="inline-block bg-vert-eau text-white px-10 py-5 rounded-full font-bold uppercase tracking-widest text-[10px] hover:opacity-90 transition shadow-lg">Découvrir mes accompagnements</a>
-        </footer>
-
     </article>
 
-    <footer class="py-12 text-center text-slate-400 text-[10px] uppercase tracking-widest border-t border-sable">
-        <p>&copy; 2026 — Auralis Spiritualité | Julie Bain</p>
+    <footer class="py-16 text-center border-t border-slate-100">
+        <p class="text-[10px] uppercase tracking-[0.4em] text-slate-400">
+            &copy; 2026 — Auralis Spiritualité | Julie Bain
+        </p>
     </footer>
 
 </body>
