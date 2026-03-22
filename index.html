@@ -17,6 +17,23 @@
         .form-section { display: none; }
         .form-section.active { display: block; animation: fadeIn 0.6s ease-in-out; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Style impactant pour le bouton YouTube */
+        .btn-youtube {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .btn-youtube:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(255, 0, 0, 0.15);
+        }
+        .pulse-red {
+            animation: pulse-animation 2s infinite;
+        }
+        @keyframes pulse-animation {
+            0% { box-shadow: 0 0 0 0px rgba(255, 0, 0, 0.2); }
+            100% { box-shadow: 0 0 0 15px rgba(255, 0, 0, 0); }
+        }
     </style>
 </head>
 <body class="bg-white text-slate-800 leading-relaxed">
@@ -49,19 +66,32 @@
                 </div>
             </div>
             <h2 class="text-3xl md:text-4xl mb-10 italic text-slate-900 font-serif font-bold">Bonjour, je suis Julie</h2>
-            <div class="space-y-6 text-lg text-slate-700 italic leading-relaxed">
+            
+            <div class="space-y-6 text-lg text-slate-700 italic leading-relaxed mb-10">
                 <p>Mon chemin a toujours été guidé par une passion profonde pour le développement personnel. Après avoir partagé mes réflexions sur les réseaux sociaux, j’ai choisi de mettre ma sensibilité de médium au service de votre sérénité.</p>
                 <p>Avec <strong>Auralis Spiritualité</strong>, je vous propose un espace sans jugement pour vous éclairer avec tact, authenticité et bienveillance.</p>
             </div>
+
+            <!-- BOUTON YOUTUBE IMPACTANT -->
+            <div class="flex flex-col items-center gap-4 py-6">
+                <p class="text-[10px] uppercase tracking-[0.3em] font-bold text-slate-400">Parce que l'énergie passe aussi par la voix</p>
+                <a href="https://www.youtube.com/@Auralis-spiritualite" target="_blank" class="btn-youtube pulse-red flex items-center gap-4 bg-white border-2 border-slate-900 px-8 py-4 rounded-full hover:bg-slate-900 hover:text-white transition-all group">
+                    <svg class="w-8 h-8 text-red-600 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                    <span class="text-xs font-black uppercase tracking-[0.2em]">Me découvrir en vidéo sur YouTube</span>
+                </a>
+            </div>
+
             <div class="h-px w-24 bg-vert-eau mx-auto mt-12"></div>
         </div>
     </section>
 
+    <!-- Reste du code original (Services, Blog, Contact, Footer) conservé à l'identique -->
     <section id="services" class="py-24 px-6 bg-sable/30 border-y border-sable">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl md:text-5xl text-center mb-16 italic font-bold">Mes Accompagnements</h2>
             <div class="grid lg:grid-cols-3 gap-8 items-stretch">
-                
                 <div class="bg-white border border-sable rounded-[40px] p-8 shadow-sm hover:shadow-xl transition-all border-t-8 border-t-vert-eau flex flex-col">
                     <h3 class="text-2xl font-bold mb-2 font-serif">Séance Individuelle</h3>
                     <p class="text-3xl font-light text-vert-eau italic mb-4">35 €</p>
@@ -98,11 +128,11 @@
         </div>
     </section>
 
+    <!-- Les sections Blog, Confiance, Contact et Footer sont conservées strictement selon ton original -->
     <section id="blog" class="py-24 px-6 bg-white">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl md:text-5xl text-center mb-16 italic font-bold">Le Cercle d'Éveil</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Les 9 modules complets -->
                 <a href="blog/blog-vieille-ame.html" class="group p-8 bg-sable/50 rounded-[32px] hover:bg-white hover:shadow-xl transition-all text-center">
                     <span class="text-vert-eau text-[10px] font-bold uppercase">Âme</span>
                     <h3 class="text-xl font-bold italic mt-2">Vieille Âme</h3>
@@ -178,7 +208,6 @@
 
     <section id="contact" class="py-24 bg-white px-6">
         <div class="max-w-2xl mx-auto">
-            
             <div id="form-astral" class="form-section bg-white p-10 rounded-[40px] shadow-2xl border border-sable mb-10">
                 <h2 class="text-2xl font-bold mb-6 italic text-center text-amber-700">Vos informations pour votre Thème Astral</h2>
                 <form action="https://formspree.io/f/mreegdyd" method="POST" class="space-y-4">
@@ -188,9 +217,8 @@
                     <button type="submit" class="w-full bg-amber-700 text-white py-4 rounded-xl font-bold uppercase tracking-widest text-[10px]">Envoyer mes informations</button>
                 </form>
             </div>
-
             <div id="form-pendule" class="form-section bg-white p-10 rounded-[40px] shadow-2xl border border-sable">
-                <h2 class="text-2xl font-bold mb-6 italic text-center">Vos 10 questions pour le Pendule</h2>
+                <h2 class="text-2xl font-bold mb-6 italic text-center text-slate-800">Vos 10 questions pour le Pendule</h2>
                 <form action="https://formspree.io/f/mreegdyd" method="POST" class="space-y-4">
                     <input type="text" name="name" placeholder="Nom et Prénom" required class="w-full p-4 rounded-xl border border-sable italic outline-none">
                     <input type="email" name="email" placeholder="Votre Email" required class="w-full p-4 rounded-xl border border-sable italic outline-none">
@@ -199,7 +227,6 @@
                     <button type="submit" class="w-full bg-vert-eau text-white py-4 rounded-xl font-bold uppercase tracking-widest text-[10px]">Envoyer mes questions</button>
                 </form>
             </div>
-
             <div id="contact-standard" class="text-center mt-12">
                 <p class="italic text-slate-400">Pour toute autre question : <br><strong>julia.ferrant.17@gmail.com</strong></p>
             </div>
